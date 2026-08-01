@@ -43,7 +43,6 @@ def main():
                             return
                         
         except ValueError: 
-            print("Value Error")
             pass
 
                     
