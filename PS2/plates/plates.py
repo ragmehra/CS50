@@ -38,10 +38,10 @@ def number_check(s1):
 
 def punctuation_check(s2): 
     for l in s2: 
-        if l in r"""!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~ """:
+        if l in r'''!\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~ ''':
             return False
-        else: 
-            return True
+
+    return True
 
 if __name__ == "__main__":
     main()
