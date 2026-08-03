@@ -1,10 +1,11 @@
 def main(): 
-    greeting = input("Greeting:").strip().lower()
+    greeting = input("Greeting:")
     output = value(greeting)
     print(f"${output}")
     
 
 def value(greeting): 
+    greeting = greeting.strip().lower()
     if greeting.startswith("hello"):
         return 0
     elif greeting.startswith("h"):
