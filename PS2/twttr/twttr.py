@@ -1,9 +1,9 @@
 def main(): 
     user_input = input("Word: ")
-    print(remove_vowels(user_input))
+    print(shorten(user_input))
 
 
-def remove_vowels(word): 
+def shorten(word): 
     result = ''
     for l in word: 
         if l in "aeiouAEIOU": 
