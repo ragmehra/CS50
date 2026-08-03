@@ -1,13 +1,16 @@
 def main(): 
-    greeting = input("Greeting:")
-    greeting = greeting.strip().lower()
+    greeting = input("Greeting:").strip().lower()
+    output = value(greeting)
+    print(f"${output}")
+    
 
+def value(greeting): 
     if greeting.startswith("hello"):
-        print("$0")
+        return 0
     elif greeting.startswith("h"):
-        print("$20")
+        return 20
     else:
-        print("$100")   
+        return 100
 
-
-main()
+if __name__ == "__main__":
+    main()
